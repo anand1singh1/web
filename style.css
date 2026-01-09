@@ -60,41 +60,9 @@ body {
     border-bottom: 2px solid #020617;
 }
 
-/* HERO SECTION */
-.main {
-    max-width: 1100px;
-    margin: auto;
-    padding: 70px 20px;
-    display: flex;
-    align-items: center;
-    gap: 60px;
-}
 
-.devoloper-image img {
-    width: 300px;
-    border-radius: 50%;
-    border: 6px solid #6366f1;
-}
 
-.main-text h2 {
-    font-size: 22px;
-    color: #64748b;
-}
 
-.main-text h1 {
-    font-size: 40px;
-    margin: 10px 0;
-}
-
-.main-text span {
-    color: #6366f1;
-}
-
-.main-text p {
-    max-width: 420px;
-    line-height: 1.6;
-    color: #475569;
-}
 
 /* FOOTER */
 .footer {
@@ -125,8 +93,4 @@ body {
         display: flex;
     }
 
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
 }
