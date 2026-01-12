@@ -1,0 +1,156 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* STICKY FOOTER */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(90deg, #6366f1, #22d3ee);
+    padding: 20px 0;
+}
+
+.header-box {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span {
+    color: #020617;
+}
+
+/* MENU BUTTON */
+.menu-btn {
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+/* NAV */
+.nav-menu {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #020617;
+    font-weight: 600;
+    padding-bottom: 4px;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    border-bottom: 2px solid #020617;
+}
+
+/* REPORT SECTION */
+.report-section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+    flex: 1;
+}
+
+.report-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.report-box {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.report-box h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #020617;
+}
+
+.report-box p {
+    line-height: 1.7;
+    color: #475569;
+}
+
+.validator-images {
+    display: flex;
+    flex-wrap: wrap;      
+    justify-content: center;  /
+    gap: 20px;            /* space between images */
+    padding: 20px;
+}
+
+.validator-images img {
+    max-width: 200px;     
+    width: 100%;          /* make images responsive */
+    height: auto;         
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s; /* small hover effect */
+}
+
+.validator-images img:hover {
+    transform: scale(1.05); 
+}
+
+
+/* FOOTER */
+.footer {
+    background: #020617;
+    color: #cbd5f5;
+    text-align: center;
+    padding: 18px;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+/* RESPONSIVE */
+#menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        display: none;
+    }
+
+    #menu-toggle:checked ~ .nav-menu {
+        display: flex;
+    }
+
+    .report-title {
+        font-size: 28px;
+    }
+}
