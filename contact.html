@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Anand Portfolio</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="header-box">
+        <h1 class="logo">Anand <span>Kumar Singh</span></h1>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-btn">☰</label>
+
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="project.html">Projects</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="video-demo.html">Video Demo</a>
+            <a href="site-report.html">Site Report</a>
+        </nav>
+    </div>
+</header>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section">
+    <h2 class="contact-title">Contact Me</h2>
+
+    <form class="contact-form"
+          action="mailto:anand@gmail.com"
+          method="post"
+          enctype="text/plain">
+
+        <div class="form-row">
+            <input type="text" name="First Name" placeholder="First Name" required>
+            <input type="text" name="Middle Name" placeholder="Middle Name">
+            <input type="text" name="Last Name" placeholder="Last Name" required>
+        </div>
+
+        <div class="form-row">
+            <input type="tel" name="Phone Number" placeholder="Phone Number" required>
+            <input type="email" name="Email" placeholder="Email Address" required>
+        </div>
+
+        <textarea name="Message" placeholder="Your Message" rows="6" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    © 2026 Anand Kumar Singh
+</footer>
+
+</body>
+</html>
